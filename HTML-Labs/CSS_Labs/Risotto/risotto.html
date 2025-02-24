@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color:rgb(232, 232, 232) ;
+        }
+        path {
+            fill: transparent;
+        }
+        text {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, cursive;
+            text-anchor: middle;
+            font-weight: 550;
+            font-size: 30px;
+
+        }
+    </style>
+</head>
+<body>
+    <svg viewBox="0 0 600 600">
+        <path id="curve" d="M208,202 C249,93 372,95 413,203" />
+            <text>
+                <textPath xlink:href="#curve" startOffset="50%">
+                    Risotto
+                </textPath>
+            </text>
+    </svg>
+</body>
+</html>
