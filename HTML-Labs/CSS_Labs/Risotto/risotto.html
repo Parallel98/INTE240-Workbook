@@ -3,31 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Risotto</title>
     <style>
         body {
             background-color:rgb(232, 232, 232) ;
+            border-style: solid;
+            border-color: pink;
+            border-width: 8px;
         }
-        path {
-            fill: transparent;
-        }
-        text {
+        .title {
+            display: block;
+            margin-top: -30px;
+            margin-bottom: -40px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, cursive;
             text-anchor: middle;
+            text-transform: uppercase;
             font-weight: 550;
             font-size: 30px;
-
         }
+
+        .gridcontainer {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 85%;
+            margin: 0 auto;
+        }
+
+        .container{
+            
+            height: 97%; /* the ammout of space taken up on webpage */
+            width: calc(100% - 8px);
+            border-style:solid;
+            border-color: red;
+            border-width: 5px;
+            
+        }
+        .divider {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            margin-top: 3px;
+            margin-bottom:3px;
+        }
+
+        .empty {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            height: 30px;
+        }
+
+        .single {
+            text-align: center;
+        }
+
+        .subhead {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, cursive;
+            text-transform: uppercase;
+            font-weight: 550;
+            text-align: center;
+        }
+
+        .centerspan {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .ingredient-list {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .ingredient-list li {
+            display: block;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+
     </style>
 </head>
 <body>
-    <svg viewBox="0 0 600 600">
-        <path id="curve" d="M208,202 C249,93 372,95 413,203" />
-            <text>
-                <textPath xlink:href="#curve" startOffset="50%">
-                    Risotto
-                </textPath>
-            </text>
-    </svg>
+    <div class="container">
+        <div class="gridcontainer">
+            <div class="empty"></div>
+            <div class="centerspan">
+                <svg class="title" viewBox="0 0 320 100" xmlns="http://www.w3.org/2000/svg">
+                    <path id="curve" fill="none" d="M60,80 Q 160,20 260,80" />
+                    <text font-size="24" text-anchor="middle">
+                        <textPath href="#curve" startOffset="50%">
+                            Risotto
+                        </textPath>
+                    </text>
+                </svg>
+            </div>
+            <div class="centerspan">Risotto is a dish from northern Italy made with rice and stock (a liquid flavored with ingredients such as vegetables or chicken). The most important ingredient is good quality risotto rice, ideally carnaroli or vialone nano, both of which are available from good food shops. When cooked, this rice has a firm texture as well as a creamy softness. This may be hard to imagine, but when you have cooked a good risotto, you'll see whan I mean.</div>
+            <div class="centerspan">Once you know how to make a basic risotto, you can add other ingredients, like vegetables or meat. In Milan, risotto is made with saffron, which add a beautiful golden color.</div>
+                <div class="divider"><hr></div>
+            <div class="subhead">Serves</div>
+            <div class="subhead">Prep time</div>
+            <div class="subhead">Cooking Time</div>
+            <div class="single">4</div>
+            <div class="single">10 minutes</div>
+            <div class="single">40 minutes</div>
+                <div class="divider"><hr></div>
+            <div class="centerspan">
+                <ul class="ingredient-list">
+                    <li>1&frac12; ounces Parmesan cheese</li>
+                    <li>&mdash;</li>
+                    <li>5&ndash;6&frac14; cups vegtable or chicken stock (is you are not using fresh stock, use a good vegtable bouillon powder)</li>
+                    <li>&mdash;</li>
+                    <li>1 onion</li>
+                    <li>&mdash;</li>
+                    <li>3 tablespoons sweet butter</li>
+                    <li>&mdash;</li>
+                    <li>1 tablespoon olive oil</li>
+                    <li>&mdash;</li>
+                    <li>scant 1&frac34; cups risotto rice</li>
+                    <li>&mdash;</li>
+                    <li>&frac12; teaspoon saffron threads</li>
+                </ul>
+            </div>
+        </div>
+    </div>  
 </body>
 </html>
