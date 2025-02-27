@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="tailwindbase.css">
+</head>
+<body class="grid grid-cols-[150px_auto_150px] grid-rows-[60px_180px_40px] text-center text-[24px] [grid-template-areas:'head_head_head''nav_article_aside''foot_foot_foot']">
+    <header class="bg-[cornflowerblue] [grid-area:head;]">Header</header>
+ <nav class="bg-[khaki] [grid-area:nav;]">Nav</nav>
+ <article class="bg-[darkseagreen] [grid-area:article;]">Article</article>
+ <aside class="bg-[goldenrod] [grid-area:aside;]">Aside</aside>
+ <footer class="bg-[lemonchiffon] [grid-area:foot;]">Footer</footer>
+</body>
+</html>
