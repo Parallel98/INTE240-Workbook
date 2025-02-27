@@ -1,0 +1,21 @@
+.centered{
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+button:hover{
+    background-color: aqua;
+}
+
+label{
+    color: inherit;
+    font: inherit;
+    margin: 0; 
+}
