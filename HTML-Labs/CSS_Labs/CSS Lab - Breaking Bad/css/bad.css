@@ -1,0 +1,15 @@
+@font-face {
+    font-family: breakingBadv2;
+    src: url(../font/heart-breaking-bad.woff2);
+}
+
+@font-face {
+    font-family: breakingBad;
+    src: url(../font/heart-breaking-bad.otf);
+}
+
+p {
+    font-family: breakingBadv2, breakingBad;
+    font-size: 50px;
+    text-align: center;
+}
